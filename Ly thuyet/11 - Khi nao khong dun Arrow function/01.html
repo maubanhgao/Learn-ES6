@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bat va xu ly su kien</title>
+</head>
+<body>
+<label for="username">Name: </label>
+<input type="text" name="username" id="username" placeholder="Enter a username">
+<div id="greeting"></div>
+<script>
+    const greeting = document.querySelector("#greeting");
+    const username = document.querySelector("#username");
+    // username.addEventListener('keyup', () => {
+    //     greeting.textContent = "Hello " + this.value; //  undefined
+    //     }
+    // );
+    username.addEventListener( 'keyup', function () {
+        greeting.textContent = "Hello " + this.value;
+    })
+</script>
+</body>
+</html>
